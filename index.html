@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional YouTube Tags Generator tool - Create optimized tags for multiple platforms including YouTube, Etsy, Amazon, TikTok, Instagram, and more. Boost your content visibility instantly.">
+  <meta name="keywords" content="tags generator, youtube tags, hashtag generator, seo tags, video tags, etsy tags, amazon tags, content optimization">
+  <meta name="author" content="Tags Generator">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="theme-color" content="#3B82F6">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="YouTube Tags Generator - Professional Tag & Hashtag Tool">
+  <meta property="og:description" content="Generate optimized tags for YouTube, Etsy, Amazon, TikTok, and more platforms. Boost your content visibility with AI-powered tag suggestions.">
+  <meta property="og:image" content="https://tagsgenerator.github.io/public/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://tagsgenerator.github.io">
+  <meta property="og:site_name" content="Tags Generator">
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="YouTube Tags Generator - Professional Tag & Hashtag Tool">
+  <meta name="twitter:description" content="Generate optimized tags for YouTube, Etsy, Amazon, TikTok, and more. Boost content visibility instantly.">
+  <meta name="twitter:image" content="https://tagsgenerator.github.io/public/images/og-image.png">
+  <meta name="twitter:site" content="@tagsgenerator">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/public/images/logo.png">
+  <link rel="apple-touch-icon" href="/public/images/logo.png">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://tagsgenerator.github.io">
+  
+  <!-- Preload Critical Resources -->
+  <link rel="preload" as="style" href="/public/css/styles.css">
+  <link rel="preload" as="script" href="/public/js/utils.js">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/public/css/styles.css">
+  
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Tags Generator",
+    "description": "Professional YouTube Tags Generator and Hashtag Tool for multiple platforms",
+    "url": "https://tagsgenerator.github.io",
+    "applicationCategory": "UtilityApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "2150"
+    },
+    "image": "https://tagsgenerator.github.io/public/images/logo.png",
+    "author": {
+      "@type": "Organization",
+      "name": "Tags Generator",
+      "url": "https://tagsgenerator.github.io"
+    }
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Tags Generator",
+    "url": "https://tagsgenerator.github.io",
+    "logo": "https://tagsgenerator.github.io/public/images/logo.png",
+    "sameAs": [
+      "https://twitter.com/tagsgenerator",
+      "https://facebook.com/tagsgenerator",
+      "https://instagram.com/tagsgenerator"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Support",
+      "email": "support@tagsgenerator.github.io"
+    }
+  }
+  </script>
+  
+  <title>YouTube Tags Generator - Professional Tag & Hashtag Tool | Tags Generator</title>
+</head>
+<body>
+  <!-- Header Container -->
+  <div id="header-container"></div>
+  
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>YouTube Tags Generator</h1>
+      <p class="subtitle">Create powerful, SEO-optimized tags for your video content across multiple platforms</p>
+      
+      <div class="cta-buttons">
+        <button class="btn btn-primary" onclick="smoothScroll('generator')">Generate Tags Now</button>
+        <button class="btn btn-outline" onclick="smoothScroll('how-it-works')">Learn More</button>
+      </div>
+      
+      <!-- Tags Generator Form -->
+      <form class="tags-generator-form" id="generator" onsubmit="return false;">
+        <div class="form-group">
+          <label for="video-input">Enter Your Video Topic or Keywords</label>
+          <textarea id="video-input" placeholder="e.g., Best gaming setup 2024, How to make money online..." required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="platform-select">Select Platform (Optional)</label>
+          <select id="platform-select" style="width: 100%; padding: 0.875rem; border: 2px solid #F0EDE8; border-radius: 0.5rem; font-size: 1rem;">
+            <option value="youtube">YouTube</option>
+            <option value="etsy">Etsy</option>
+            <option value="amazon">Amazon</option>
+            <option value="tiktok">TikTok</option>
+            <option value="instagram">Instagram</option>
+            <option value="facebook">Facebook</option>
+            <option value="twitter">Twitter</option>
+            <option value="pinterest">Pinterest</option>
+            <option value="linkedin">LinkedIn</option>
+            <option value="fiverr">Fiverr</option>
+            <option value="shopify">Shopify</option>
+            <option value="redbubble">Redbubble</option>
+            <option value="ebay">eBay</option>
+            <option value="google">Google</option>
+          </select>
+        </div>
+        
+        <button type="button" class="generate-btn" id="generate-tags-btn">Generate Tags</button>
+        
+        <div class="tags-output">
+          <h4>Generated Tags</h4>
+          <div class="tags-list"></div>
+          <button type="button" class="copy-btn">📋 Copy All Tags</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="section-title">
+      <h2>Why Choose Tags Generator?</h2>
+      <p>Everything you need to maximize your content visibility and engagement</p>
+    </div>
+    
+    <div class="features-grid">
+      <div class="feature-card" data-animation="fadeInUp">
+        <div class="feature-icon">⚡</div>
+        <h3>Lightning Fast</h3>
+        <p>Generate optimized tags in seconds with our advanced AI algorithm</p>
+      </div>
+      
+      <div class="feature-card" data-animation="fadeInUp">
+        <div class="feature-icon">🎯</div>
+        <h3>Multi-Platform Support</h3>
+        <p>Create tags for 14+ different platforms with platform-specific optimization</p>
+      </div>
+      
+      <div class="feature-card" data-animation="fadeInUp">
+        <div class="feature-icon">🔒</div>
+        <h3>100% Free & Private</h3>
+        <p>No registration required, no data collection, completely free to use</p>
+      </div>
+      
+      <div class="feature-card" data-animation="fadeInUp">
+        <div class="feature-icon">📊</div>
+        <h3>SEO Optimized</h3>
+        <p>Get tags that are proven to increase visibility and engagement on your content</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- How It Works Section -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="section-title">
+      <h2>How It Works</h2>
+      <p>Follow these simple steps to generate perfect tags for your content</p>
+    </div>
+    
+    <div class="steps-container">
+      <div class="step" data-animation="fadeInUp">
+        <div class="step-number">1</div>
+        <h3>Enter Your Topic</h3>
+        <p>Simply type in your video topic, keywords, or main content theme</p>
+      </div>
+      
+      <div class="step" data-animation="fadeInUp">
+        <div class="step-number">2</div>
+        <h3>Select Platform</h3>
+        <p>Choose the platform you're publishing to (YouTube, TikTok, Instagram, etc.)</p>
+      </div>
+      
+      <div class="step" data-animation="fadeInUp">
+        <div class="step-number">3</div>
+        <h3>Generate Tags</h3>
+        <p>Click generate and watch our AI create optimized tags instantly</p>
+      </div>
+      
+      <div class="step" data-animation="fadeInUp">
+        <div class="step-number">4</div>
+        <h3>Copy & Use</h3>
+        <p>Copy the generated tags with one click and paste them into your content</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- All Tools Section -->
+  <section class="all-tools" id="all-tools">
+    <div class="section-title">
+      <h2>All Tools</h2>
+      <p>Generate optimized tags for 14+ different platforms</p>
+    </div>
+    
+    <div id="tools-container"></div>
+  </section>
+  
+  <!-- FAQ Section -->
+  <section class="faq" id="faq">
+    <div class="section-title">
+      <h2>Frequently Asked Questions</h2>
+      <p>Find answers to common questions about Tags Generator</p>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-header">
+        <span>How many tags should I use?</span>
+        <span class="faq-icon">▼</span>
+      </div>
+      <div class="faq-content">
+        <p class="faq-text">The optimal number of tags depends on the platform. YouTube allows up to 500 characters for tags (usually 10-15 tags), while Instagram allows 30 tags per post. Our generator provides platform-specific recommendations to maximize visibility without triggering spam filters.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-header">
+        <span>Is this tool really free?</span>
+        <span class="faq-icon">▼</span>
+      </div>
+      <div class="faq-content">
+        <p class="faq-text">Yes, absolutely! Tags Generator is completely free to use. No hidden fees, no premium tiers, no registration required. We believe in providing valuable tools to content creators without any cost barriers.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-header">
+        <span>Does it work for all platforms?</span>
+        <span class="faq-icon">▼</span>
+      </div>
+      <div class="faq-content">
+        <p class="faq-text">Our tool supports 14+ platforms including YouTube, TikTok, Instagram, Facebook, Twitter, Pinterest, LinkedIn, Etsy, Amazon, eBay, Shopify, Fiverr, Redbubble, and Google. Each platform gets tags optimized according to its unique algorithm and best practices.</p>
+      </div>
+    </div>
+    
+    <div class="faq-item">
+      <div class="faq-header">
+        <span>Will this guarantee my content goes viral?</span>
+        <span class="faq-icon">▼</span>
+      </div>
+      <div class="faq-content">
+        <p class="faq-text">While our tool generates SEO-optimized tags that significantly improve discoverability, going viral depends on many factors including content quality, timing, engagement, and audience relevance. Our tags are scientifically optimized to maximize your content's visibility potential.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="cta-section" id="cta">
+    <h2>Ready to Boost Your Content Visibility?</h2>
+    <p>Start generating optimized tags for your content right now</p>
+    <button class="btn btn-secondary" onclick="smoothScroll('generator')">Get Started Free</button>
+  </section>
+  
+  <!-- Footer Container -->
+  <footer>
+    <div id="footer-container"></div>
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="/public/js/utils.js"></script>
+  <script src="/public/js/main.js"></script>
+</body>
+</html>
